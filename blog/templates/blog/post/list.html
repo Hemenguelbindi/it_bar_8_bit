@@ -13,4 +13,5 @@ Published {{ post.publish }} by {{ post.author }}
 </p>
 {{ post.body|truncatewords:30|linebreaks }}
 {% endfor %}
+{% include "pagonation.html" with page=posts%}
 {% endblock %}
